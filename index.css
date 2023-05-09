@@ -1,0 +1,140 @@
+* {
+  /*universal selector-tüm elementleri seçer*/
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#sticky {
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+nav a:hover {
+  background-color: rgb(96, 158, 60);
+  color: white;
+}
+.hero {
+  background-image: url("./architecture-2596638_1920.jpg");
+  opacity: 0.5;
+  height: calc(100vh - 69px);
+  background-size: cover;
+  background-position: center left;
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  top: 5%;
+  left: 11%;
+  /*transform: translate(-50%, -50%); */
+}
+.hero-title {
+  font-size: 30px;
+  color: rgb(96, 158, 60);
+  text-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+  /*!birincisi x ekseni,ikinci y ekseni, üçüncü blur , dördüncü color*/
+}
+.hero-par {
+  position: absolute;
+  font-size: 20px;
+  color: rgb(42, 70, 25);
+  font-weight: 700;
+  text-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+/*ABOUT kısmı*/
+#about {
+  background-color: grey;
+  margin-top: 20px solid grey;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.about-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+.about-img-div img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+.about-img-div {
+  flex: 1;
+}
+.about-text-div {
+  flex: 2;
+  text-align: justify;
+  /* line-height: 2; */
+}
+/*! ---- SERVICE ---- */
+
+#services {
+  background-color: rgb(97, 97, 97);
+}
+
+#services img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#services .img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/*!Footer kısmı*/
+footer {
+  background-color: black;
+  padding: 40px;
+}
+footer a {
+  color: white;
+  margin-right: 10px;
+}
+.social-icons {
+  font-size: 30px;
+}
+footer a:hover {
+  color: rgb(96, 158, 60);
+}
+
+/*!WP kısmı*/
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: green;
+  border-radius: 50%;
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed a {
+  color: white;
+}
+.fixed:hover {
+  opacity: 1;
+}
